@@ -33,12 +33,20 @@ var uhdata = [
 
 How would you access value "Liberal Arts" in CIP_DESC?
 
+console.log(uhdata[1].CIP_DESC);
+
+this is accessing the uh data array and then inside the uhdata array it is accessing the first value which is the second object array. Then when i put .CIP_DESC it will day liberal arts.
+
 2. Display "John" by extracting information from the person object
 
 var person = { 
 	firstName: "John", 
 	lastName: "Doe"
 };
+
+console.log(person.firstName);
+
+first i am accessing the person array then the key firstName. This will give me john.
 
 3. Use a for...in loop to display the values of this object.
 
@@ -50,6 +58,12 @@ var bear = {
 	favoriteFood: "marshmallows"
 };
 
+for(var a in bear){
+    console.log(bear[a]);
+}
+
 4. Access the object in the previous question to display "Grizzly Bear loves marshmallows" as a string concatenation.
+
+console.log(bear.firstName + bear.lastName + " loves" + bear.favoriteFood);
 
 
